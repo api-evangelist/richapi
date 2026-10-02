@@ -1,0 +1,30 @@
+aid: richapi
+name: RichAPI
+description: 'RichAPI is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
+  and added to the network as a stub for full-pipeline profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/richapi/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-02'
+modified: '2026-10-02'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://richapi.ai/
+- type: Documentation
+  url: https://app.richapi.ai/docs
+x-submission-notes: GTM data API (LinkedIn enrichment, people search, contact finding, signals) with REST
+  + MCP.
+x-submission-probe: root 200; llms.txt 200; OpenAPI 3.1.0 70 paths (app.richapi.ai/api/openapi, server
+  api.richapi.ai/api/v1); MCP mcp.richapi.ai/mcp 401 (OAuth/x-api-key); 404 probe 404
+x-submitted-by: accounts@richapi.ai (apis.io/add, 2026-09-29)
