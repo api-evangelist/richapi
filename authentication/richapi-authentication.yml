@@ -1,0 +1,14 @@
+generated: '2026-10-02'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://richapi.ai/playbooks/per-client-api-keys-for-agencies
+sources:
+- https://richapi.ai/playbooks/per-client-api-keys-for-agencies
+description: Authentication uses the x-api-key header.
+schemes:
+- type: apiKey
+  name: apiKey
+  evidence: Authentication uses the x-api-key header.
+  location: header
+  header: x-api-key
+docs: https://richapi.ai/playbooks/per-client-api-keys-for-agencies

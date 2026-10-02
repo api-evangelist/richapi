@@ -1,0 +1,34 @@
+generated: '2026-10-02'
+method: searched
+source: https://richapi.ai/security
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://richapi.ai/security
+        http_status: 200
+        fetched: "true"
+        quote: "For privacy or data removal requests: privacy@richapi.ai"
+        note: Provides contact for data subject requests such as deletion or access.
+  subprocessors:
+    evidence:
+      - source: https://richapi.ai/security
+        http_status: 200
+        fetched: "true"
+        quote: "We can provide a detailed subprocessor list for security reviews."
+        note: Indicates willingness to disclose subprocessor information.
+  data_residency:
+    evidence:
+      - source: https://richapi.ai/security
+        http_status: 200
+        fetched: "true"
+        quote: "Data residency API processing currently runs in AWS US East"
+        note: States where data processing occurs.
+  incident_notification:
+    evidence:
+      - source: https://richapi.ai/security
+        http_status: 200
+        fetched: "true"
+        quote: "We design for failure too. Third-party providers can go down. APIs can fail. Requests can time out."
+        note: Describes handling of failures but does not specify incident notification policy.
+  global_privacy_control:
+    evidence: []

@@ -1,30 +1,91 @@
 aid: richapi
 name: RichAPI
-description: 'RichAPI is a company surfaced via the API Evangelist harvest backlog (source: new-submission)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://richapi.ai/opengraph-image
+description: RichAPI provides a B2B data enrichment platform and Managed Customer Platform (MCP) that aggregates over 65 GTM data endpoints across
+  categories such as company enrichment, contact finding, social signals, and webscraping. With a single API key and credit pool, developers can
+  integrate live contact, company, and signal data into applications, CRMs, and AI assistants. The service offers a free tier with 25 credits,
+  flexible pricing, and extensive documentation for quick onboarding.
 url: https://raw.githubusercontent.com/api-evangelist/richapi/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-02 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-02'
 modified: '2026-10-02'
 tags:
 - Company
-apis: []
+- API
+- Data-Enrichment
+- B2B
+- MCP
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/richapi-plans-pricing.yml
+- type: Compliance
+  url: https://richapi.ai/security
+- type: Authentication
+  url: authentication/richapi-authentication.yml
+- type: Conformance
+  url: conformance/richapi-conformance.yml
+- type: LLMsTxt
+  url: llms/richapi-llms.txt
+- type: MCPServer
+  url: mcp/richapi-mcp.yml
+- type: SecurityTxt
+  url: well-known/richapi-vercel-security.txt
+- type: SecurityTxt
+  url: well-known/richapi-status-security.txt
+- type: WellKnown
+  url: well-known/richapi-well-known.yml
+- type: Hosts
+  url: hosts/richapi-hosts.yml
+- type: Vendors
+  url: vendors/richapi-vendors.yml
+- type: SDKs
+  url: packages/richapi-packages.yml
+- type: Packages
+  url: packages/richapi-packages.yml
+- type: StatusPage
+  url: https://status.richapi.ai
+- type: Security
+  url: https://richapi.ai/security
+- type: Login
+  url: https://app.richapi.ai/auth/sign-in
+- type: APIReference
+  url: https://richapi.ai/developers
+- type: TrustCenter
+  url: security/richapi-trust-center.yml
+- type: DomainSecurity
+  url: security/richapi-domain-security.yml
 - type: Website
   url: https://richapi.ai/
 - type: Documentation
   url: https://app.richapi.ai/docs
-x-submission-notes: GTM data API (LinkedIn enrichment, people search, contact finding, signals) with REST
-  + MCP.
-x-submission-probe: root 200; llms.txt 200; OpenAPI 3.1.0 70 paths (app.richapi.ai/api/openapi, server
-  api.richapi.ai/api/v1); MCP mcp.richapi.ai/mcp 401 (OAuth/x-api-key); 404 probe 404
+- type: DeveloperPortal
+  url: https://app.richapi.ai
+- type: Pricing
+  url: https://richapi.ai/pricing
+- type: Blog
+  url: https://richapi.ai/blog
+apis:
+- name: RichAPI Backend API
+  description: RichAPI Backend API providing data enrichment and MCP endpoints.
+  humanURL: https://app.richapi.ai/docs
+  baseURL: https://api.richapi.ai
+  aid: richapi:richapi-backend-api
+x-submission-notes: GTM data API (LinkedIn enrichment, people search, contact finding, signals) with REST + MCP.
+x-submission-probe: root 200; llms.txt 200; OpenAPI 3.1.0 70 paths (app.richapi.ai/api/openapi, server api.richapi.ai/api/v1); MCP mcp.richapi.ai/mcp
+  401 (OAuth/x-api-key); 404 probe 404
 x-submitted-by: accounts@richapi.ai (apis.io/add, 2026-09-29)
+x-enrichment:
+  date: '2026-10-02'
+  status: enriched
+  artifacts_added: 21
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

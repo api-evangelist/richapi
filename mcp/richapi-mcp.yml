@@ -1,0 +1,8 @@
+generated: '2026-10-02'
+method: probed
+source: https://mcp.richapi.ai/mcp
+deployment:
+  mode: remote
+  endpoint: https://mcp.richapi.ai/mcp
+  auth: unknown
+  verified: probed

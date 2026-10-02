@@ -1,0 +1,30 @@
+# RichAPI
+
+> GTM data API: 65+ endpoints, one key, REST + MCP. Explicit endpoint billing, credits never expire.
+
+- REST: https://api.richapi.ai/api/v1/{endpoint}  (header: x-api-key)
+- MCP:  https://mcp.richapi.ai/mcp  (35+ tools)
+- Billing: fixed credits, prepaid, never expire. Endpoint rates are per call or per result.
+- Tiers: Sandbox $0 (25 credits) · Starter $100 (5,000 credits) · Growth $450 (25,000 credits, 11% bonus) · Scale $800 (50,000 credits, 25% bonus) · Enterprise custom (committed volume)
+- Credit value: 1 credit costs $0.020 on Starter, $0.018 on Growth and $0.016 on Scale, bonus credits included.
+
+## Docs
+
+- [API reference](https://app.richapi.ai/docs): Base URL, auth, response shapes, endpoint billing rules.
+- [OpenAPI spec](https://app.richapi.ai/api/openapi): Machine-readable schema for all endpoints.
+- [Status](https://status.richapi.ai): Uptime and incident history.
+- [Full reference for agents](https://richapi.ai/llms-full.txt): Pricing, endpoint rates, FAQs and policies in one file.
+- [Pricing as markdown](https://richapi.ai/pricing.md): Credit bundles and endpoint rates as tables.
+
+## Product
+
+- [Pricing](https://richapi.ai/pricing): Pay-as-you-go credit bundles, no subscription, 25 free credits to start.
+- [MCP](https://richapi.ai/mcp): Connect RichAPI to Claude or ChatGPT via MCP; search, enrich, and verify data from 40+ data providers.
+- [API overview](https://richapi.ai/api): LinkedIn enrichment, people search, contact finding, signals, website intelligence, and AI enrichment behind one key.
+- [Developers](https://richapi.ai/developers): Auth, execution logs, MCP install, errors, OpenAPI and Postman — first 200 OK in five minutes.
+
+## Optional
+
+- [Proxycurl alternative](https://richapi.ai/alternatives/proxycurl): Migration map for Proxycurl users after its July 2025 shutdown.
+- [Security](https://richapi.ai/security): API key/OAuth handling, data retention, provider chain, GDPR and SOC 2 posture.
+- [Data transparency](https://richapi.ai/data-transparency): Data sourcing, storage, subprocessor list, removal requests.

@@ -1,0 +1,39 @@
+generated: '2026-10-02'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://richapi.ai/pricing
+sources:
+- https://richapi.ai/pricing
+- https://richapi.ai/pricing.md
+name: RichAPI pricing
+audience: developer-api
+pricing_basis: per-call
+plans:
+- name: Sandbox
+  price_text: $0
+  price: 0
+  description: 25 credits · no card
+- name: Starter
+  price_text: $100
+  price: 100
+  description: 5,000 credits · never expire
+- name: Growth
+  price_text: $450
+  price: 450
+  description: 25,000 credits (11% bonus) · never expire
+- name: Scale
+  price_text: $800
+  price: 800
+  description: 50,000 credits (25% bonus) · never expire
+- name: Enterprise
+  price_text: Custom
+  description: Committed volume
+  features:
+  - Custom rate card on committed volume
+  - SOC 2 documentation under NDA
+  - DPA/MSA · white-label webhooks
+  - Custom rate limits · dedicated engineer
+  limits:
+  - name: Talk to sales
+    limit_text: Contact sales
+docs: https://richapi.ai/pricing
