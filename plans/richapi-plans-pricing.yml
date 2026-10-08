@@ -37,3 +37,41 @@ plans:
   - name: Talk to sales
     limit_text: Contact sales
 docs: https://richapi.ai/pricing
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units: []
+  plans:
+  - name: Sandbox
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Starter
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Growth
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Scale
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
